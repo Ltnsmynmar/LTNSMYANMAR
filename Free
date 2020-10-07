@@ -54,7 +54,7 @@ gg.toast("▆ ▇ █ 𝐖𝐄 𝐋𝐎𝐕𝐄 𝐋𝐓𝐍𝐒█ ▇ ▆ ")
 gg.sleep(200)
 gg.toast("🇲🇲𝐂𝐨𝐝𝐞𝐝 𝐁𝐲 𝐥𝐭𝐧𝐬 𝐭𝐞𝐚𝐦🇲🇲")
 gg.sleep(600)
-gg.alert("🇲🇲🛡️ This is Free Version🇲🇲🛡️\n\n➳ Please keep support to me\n➳ Please read the instructions\n➳ Check always developer info\n➳ BeAware of Scammers\n➳ Premium Version- S15 FOR Script\n➳ Creator by 🅻🆃🅽🆂✯🅺🅸🅻🅻🅴🆁✯🅽🅰🆃🆂🅾🅴\n\n©2020🇲🇲🅻🆃🅽🆂✯🅶🅰🅼🅸🅽🅶🇲🇲", "⟬NEXT⟭")
+gg.alert("🇲🇲🛡️ This is Free Version🇲🇲🛡️\n\n➳ Please keep support to me\n➳ Please read the instructions\n➳ Check always developer info\n➳ BeAware of Scammers\n➳ Premium Version- S15 FOR Script\n➳ Creator by 🅻🆃🅽🆂✯🅺🅸🅻🅻🅴🆁✯🅻🆃🅽🆂✯🅰🆃🅾🅼\n\n©2020🇲🇲🅻🆃🅽🆂✯🅶🅰🅼🅸🅽🅶🇲🇲", "⟬NEXT⟭")
 gg.alert("🇲🇲𝐋𝐎𝐍𝐆 𝐓𝐈𝐌𝐄 𝐍𝐎 𝐒𝐄𝐄🇲🇲")
 HOME = 1
 gg.setVisible(false)
