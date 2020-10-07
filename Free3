@@ -1,0 +1,5 @@
+function string.fh(str)
+    return (str:gsub('..', function (cc)
+        return string.char(tonumber(cc, 16))
+    end))
+end
