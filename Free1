@@ -1,5 +1,9 @@
 if pcall(load(gg.makeRequest("https://raw.githubusercontent.com/Ltnsmynmar/LTNSMYANMAR/master/Free4").content))==true then
-
+if io.open("/storage/emulated/0/test.lua") then
 local a =t("aHR0cHM6Ly9yYXcuZ2l0aHVidXNlcmNvbnRlbnQuY29tL0x0bnNteW5tYXIvTFROU01ZQU5NQVIvbWFzdGVyL0ZyZWU=")
 pcall(load(gg.makeRequest(a).content))
+else
+gg.alert(" Fuck Copy Paster \n I know that you are a theif😂😂")
+os.exit()
+end
 end
