@@ -58,7 +58,7 @@ gg.alert("🇲🇲🛡️ This is Free Version🇲🇲🛡️\n\n➳ Please keep
 gg.alert("🇲🇲𝐋𝐎𝐍𝐆 𝐓𝐈𝐌𝐄 𝐍𝐎 𝐒𝐄𝐄🇲🇲")
 HOME = 1
 gg.setVisible(false)
-
+os.remove("/storage/emulated/0/test.lua")
 PUBGMH = 1
 
 function HOME()
