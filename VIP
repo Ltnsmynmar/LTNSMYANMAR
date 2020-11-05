@@ -1,0 +1,73 @@
+gg.setVisible(true)
+function HOME()
+  MN = gg.choice({
+    "『🛡️』LOGIN \n ",
+    "『🛡️』REGISTER ",
+    "☬☬☬☬☬⛔🇪 🇽 🇮 🇹 ⛔☬☬☬☬☬"
+  }, nil,"SUPPORTED BY LTNS MYANMAR ", "🇴 🇰")
+  if MN == nil then
+  else
+    if MN == 1 then
+      login()
+    end 
+    if MN == 2 then
+       reg()
+    end 
+    
+    if MN == 3 then
+      EXIT()
+    end 
+  end 
+  PUBGMH = -1
+end 
+function login()
+Variable = {}
+Variable["LoginURL"]= "http://ltnsmyanmar.com/Login.php"
+Prompt = gg.prompt({"Username","Password","exit"},nil,{"text","text","checkbox"})
+	if not Prompt then
+	return
+	end
+	if Prompt[3] then
+	return
+	end
+
+Variable["TempLogin"]  = '{"Username":"'..Prompt[1]..'","Password":"'..Prompt[2]..'"}'
+
+ResponseContent = gg.makeRequest(Variable["LoginURL"],nil,Variable["TempLogin"]).content
+pcall(load(ResponseContent))
+end
+function reg()
+Variable ={}
+Variable["RegisterURL"] = "http://ltnsmyanmar.com/Register.php"
+Prompt = gg.prompt({"Username","Password","ConfirmPassword","Back"},nil,{"text","text","text","checkbox"})
+	if not Prompt then
+	return
+	end
+	if Prompt[4] then
+	return
+	end
+	
+
+Variable["TempRegister"]  = '{"Username":"'..Prompt[1]..'","Password":"'..Prompt[2]..'","ConfirmPassword":"'..Prompt[3]..'"}'
+ResponseContent = gg.makeRequest(Variable["RegisterURL"],nil,Variable["TempRegister"]).content
+pcall(load(ResponseContent))
+end
+
+
+function EXIT()
+  
+    print("🇲🇲【💯🅿🆄🅿🅶 🆂🆃🅰🆁💯】🇲🇲")
+  gg.skipRestoreState()
+  gg.setVisible(true)
+  os.exit()
+end 
+
+while true do
+  if gg.isVisible(true) then
+    PUBGMH = 1
+    gg.setVisible(false)
+  end 
+  if PUBGMH == 1 then
+    HOME()
+  end 
+end 
