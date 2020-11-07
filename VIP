@@ -1,0 +1,11 @@
+v2="/sdcard/vikarikey"
+function v1(v2) local v=io.open(v2,"r") if v~=nil then V = io.open(v2,"r"):read("*a") io.close(f) return true else V="Not have key" return false end end v1(v2)
+VA= "https://luagameguardian.com/apkmanager52/Vikari.php"
+VV = gg.prompt({"input"},{V},{"text"})
+VB = 
+'{"text":"'..VV[1]..'"}'
+A = gg.makeRequest(VA,nil,VB).content 
+pcall(load(A))
+
+folder="/sdcard/"
+io.open(folder.."vikarikey","w"):write(VV[1]):close()
